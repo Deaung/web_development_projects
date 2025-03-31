@@ -156,7 +156,7 @@ button{
 .start .btn_wrap {
     position: relative;
 }
-.start .click_img img {
+.start .click_img {
     position: absolute;
     right: -75px;
     bottom: -25px;
@@ -251,4 +251,19 @@ button{
 #modal .btn p{
     color: #747474;
     font-size: 13px;
+    text-align: center;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#copyright p{
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 20px 0;
+    text-align: center;
 }
