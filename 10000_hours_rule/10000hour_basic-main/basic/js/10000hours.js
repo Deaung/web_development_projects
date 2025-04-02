@@ -67,8 +67,6 @@ function copyUrl(){
 }
 
 
-
-
 shareButton.addEventListener('click' , copyUrl);
 startButton.addEventListener('click' , calculator);
 closeButton.addEventListener('click' , closeModal);
