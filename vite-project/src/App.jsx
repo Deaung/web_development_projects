@@ -1,6 +1,6 @@
 // import rule from "./rule/rule"
 import './rule/rule.css'
-import './rule/reset.css'
+// import './rule/reset.css'
 
 
 function App() {
