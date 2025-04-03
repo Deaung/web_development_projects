@@ -47,7 +47,6 @@ body{
   background-color: #5b2386;
   color: #fff;
 }
-
 #contents{
   display: contents;
   justify-content: center;
@@ -78,7 +77,6 @@ body{
   width: 100%;
   height: auto;
 }
-
 .intro{
   display: flex;
   flex-direction: column;
@@ -110,7 +108,6 @@ body{
   font-family: 'GmarketSansBold';
   font-size: 20px;
 }
-/* 사용자 입력 */
 .inputs{
   display: flex;
   flex-direction: column;
