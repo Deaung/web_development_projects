@@ -7,7 +7,7 @@ const modal = document.querySelector('#modal');
 const loading = document.querySelector('.result_loading');
 
 function calculator(){
-  const fieldValue = document.querySelector('#field_velue');
+  const fieldValue = document.querySelector('#field_value');
   let timeValue = document.querySelector('#time_value');
   let timeValue_int = Number(timeValue.value);
 
