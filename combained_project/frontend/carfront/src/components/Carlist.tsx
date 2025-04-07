@@ -55,6 +55,7 @@ function Carlist(){
         rows={data}
         columns={colums}
         getRowId={row => row._links.self.href}
+        
       />
     );
   }
