@@ -1,11 +1,37 @@
-.home-container{
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #626d58;
+}
+
+/* .home-container{
+  
+} */
+
+.home-body{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.home-body .busan-map{
+  margin-left: 500px;
+  width: 50%;
+  height: 50%;
+}
+
+.home-body .centeral-btn{
 
 }
 
-.central-btn{
+.home-body .estern-btn{
 
 }
 
-.busan-map{
+.home-body .southern-btn{
+
+}
+
+.home-body .western-btn{
   
 }
