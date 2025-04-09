@@ -1,7 +1,7 @@
 html,body{
   width: 100%;
   height: 100%;
-  background-color: #626d58;
+  background-color: #fff;
 }
 
 /* .home-container{
@@ -10,28 +10,29 @@ html,body{
 
 .home-body{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 
 .home-body .busan-map{
-  margin-left: 500px;
   width: 50%;
   height: 50%;
 }
 
-.home-body .centeral-btn{
+.centeral-btn {
+  
+}
+
+.estern-btn{
 
 }
 
-.home-body .estern-btn{
+.southern-btn{
 
 }
 
-.home-body .southern-btn{
-
-}
-
-.home-body .western-btn{
+.western-btn{
   
 }

@@ -19,7 +19,7 @@ export default function Home() {
             {/* body */}
             <div className="home-body">
                 {/* 지도 이미지 */}
-                <img className="busan-map" src="src\img\busan.png" />
+                <img className="busan-map" src="src\img\busan.png"/>
                 {/* 지역별 버튼 */}
                 <button className="central-btn" onClick={() => PageMove(navigate, "central")}>중부권</button>
                 <button className="eastern-btn" onClick={() => PageMove(navigate, "eastern")}>동부권</button>

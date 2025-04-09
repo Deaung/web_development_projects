@@ -1,0 +1,38 @@
+.eastern-cafe img{
+  width: 330px;
+  height: 330px;
+}
+
+.eastern-cafe{
+  display:flex;
+  flex-direction: column;
+}
+.eastern-top{
+  margin-left: 240px;
+  margin-top: 50px;
+  display: flex;
+  gap: 80px;
+}
+.eastern-bottom{
+  margin-left: 240px;
+  margin-top: 30px;
+  display: flex;
+  gap: 200px;
+}
+
+.eastern-part1{
+  display: flex;
+  gap: 30px;
+}
+.eastern-part2{
+  display: flex;
+  gap: 30px;
+}
+.eastern-part3{
+  display: flex;
+  gap: 30px;
+}
+.eastern-part4{
+  display: flex;
+  gap: 30px;
+}

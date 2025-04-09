@@ -1,53 +1,51 @@
 /* 각 카페 별 이미지 */
-.central-part1 .centralImg1{
-  width: 350px;
-  height: 350px;
+.central-cafe img{
+  width: 330px;
+  height: 330px;
 }
 
-.central-part2 .centralImg2{
-  width: 350px;
-  height: 350px;
-}
-
-.central-part3 .centralImg3{
-  width: 350px;
-  height: 350px;
-}
-
-.central-part4 .centralImg4{
-  width: 350px;
-  height: 350px;
-  
-}
-/* 카페 별 내용 */
-/* .central-part1 .centraldetail01{
-  font-size: 30px;
-  margin-left: 600px;
-} */
 .central-cafe{
-  display:grid
+  display:flex;
+  flex-direction: column;
 }
 
+.central-top{
+  margin-left: 250px;
+  margin-top: 50px;
+  display: flex;
+  gap: 80px;
+}
+
+.central-bottom{
+  margin-left: 250px;
+  margin-top: 30px;
+  display: flex;
+  gap: 120px;
+}
 
 .central-part1{
-  margin-left: 150px;
-  margin-top: 100px;
   display: flex;
-  justify-content:flex-start
+  gap: 30px;
 }
+
+.central-part1 :hover{
+}
+
+/* .part-1-detail{
+  display: none;
+} */
+
 .central-part2{
-  margin-left: 150px;
-  margin-top: 100px;
   display: flex;
-  justify-content:flex-start
+  gap: 30px;
 }
+
 .central-part3{
-  margin-right: 150px;
   display: flex;
-  justify-content:flex-end;
+  gap: 30px;
 }
+
 .central-part4{
-  margin-right: 175px;
   display: flex;
-  justify-content:flex-end;
+  gap: 30px;
 }

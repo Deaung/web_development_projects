@@ -12,33 +12,36 @@ export default function Central() {
     return (
         <div className="central-cafe">
             <Header />
-
-            <div className="central-part1">
-                <a href="https://naver.me/5Q3mYIGJ" target="_blank" rel="noopener noreferrer">
-                    <img className="centralImg1" src={centralCafeImg1} alt="카페 이내 무목 이미지" />
-                </a>
-                <div className="centraldetail01">
-                <p>이내 무목</p>
-                <p>인공폭포가 이쁘고, 인테리어가 독특한 곳</p>
-                <p>#폭포</p>
+            <div className="central-top">
+                <div className="central-part1">
+                    <a href="https://naver.me/5Q3mYIGJ" target="_blank" rel="noopener noreferrer">
+                        <img src={centralCafeImg1} alt="카페 이내 무목 이미지"  />
+                    </a>
+                    <div className="part-1-detail">
+                    <p>이내 무목</p>
+                    <p>인공폭포가 이쁘고, 인테리어가 독특한 곳</p>
+                    <p>#폭포</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="central-part2">
-                <a href="https://naver.me/xJiRmdcK" target="_blank" rel="noopener noreferrer">
-                    <img className="centralImg2" src={centralCafeImg2} alt="카페 뱅커 이미지" />
-                </a>
-                <div>
-                <p>뱅커</p>
-                <p>쿠키와 빵 종류가 다양하고, 넓음</p>
-                <p>#크로플</p>
+                <div className="central-part2">
+                    <a href="https://naver.me/xJiRmdcK" target="_blank" rel="noopener noreferrer">
+                        <img src={centralCafeImg2} alt="카페 뱅커 이미지" />
+                    </a>
+                    <div>
+                        <p>뱅커</p>
+                        <p>쿠키와 빵 종류가 다양하고, 넓음</p>
+                        <p>#크로플</p>
+                    </div>
+                    
                 </div>
-                
-            </div>
 
+            </div>
+            
+            <div className="central-bottom">
             <div className="central-part3">
                 <a href="https://naver.me/xeAOhY3e" target="_blank" rel="noopener noreferrer">
-                    <img className="centralImg3" src={centralCafeImg3} alt="카페 이디야커피 이미지" />
+                    <img src={centralCafeImg3} alt="카페 이디야커피 이미지" />
                 </a>
                 <div>
                 <p>이디야커피 부산지오플레이스점</p>
@@ -49,7 +52,7 @@ export default function Central() {
 
             <div className="central-part4">
                 <a href="https://naver.me/Gcts7ekh" target="_blank" rel="noopener noreferrer">
-                    <img className="centralImg4" src={centralCafeImg4} alt="카페 오프커스 이미지" />
+                    <img src={centralCafeImg4} alt="카페 오프커스 이미지" />
                 </a>
                 <div>
                 <p>오프커스</p>
@@ -58,6 +61,9 @@ export default function Central() {
                 </div>
                 
             </div>
+            </div>
+
+            
 
             <Footer />
         </div>

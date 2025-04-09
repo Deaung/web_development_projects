@@ -1,0 +1,62 @@
+/* .southern-cafe img{
+  width: 330px;
+  height: 330px;
+} */
+
+.southern-cafe{
+  display:flex;
+  flex-direction: column;
+}
+.southern-top{
+  margin-left: 240px;
+  margin-top: 50px;
+  display: flex;
+  gap: 145px;
+}
+
+.southern-top img{
+  width: 330px;
+  height: 330px;
+}
+
+.southern-bottom{
+  margin-left: 240px;
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.southern-part1{
+  display: flex;
+  gap: 30px;
+}
+.southern-part2{
+  display: flex;
+  gap: 30px;
+}
+.southern-part3{
+  display: flex; 
+  gap: 30px;
+}
+
+.southern-part4{
+  display: flex;
+  gap: 30px;
+}
+
+.southcafeImg-3{
+  width: 330px;
+  height: 330px;
+}
+
+.southcafeImg-4{
+  width: 330px;
+  height: 330px;
+}
+.dog{
+  margin-left: 100px;
+  width: 220px;
+  height: 220px;
+  /* filter: blur(1px); */
+  border-radius: 50%;
+}
