@@ -4,9 +4,9 @@ html,body{
   background-color: #fff;
 }
 
-/* .home-container{
-  
-} */
+.home-container{
+  height:max-content;
+}
 
 .home-body{
   display: flex;
@@ -15,24 +15,3 @@ html,body{
   align-items: flex-end;
 }
 
-
-.home-body .busan-map{
-  width: 50%;
-  height: 50%;
-}
-
-.centeral-btn {
-  
-}
-
-.estern-btn{
-
-}
-
-.southern-btn{
-
-}
-
-.western-btn{
-  
-}
