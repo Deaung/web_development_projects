@@ -20,6 +20,5 @@ export const addCar = async (car: Car): Promise<CarResponse> => {
       'Content-Type':'application/json',
     },
   });
-
   return response.data;
 }
