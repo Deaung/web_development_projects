@@ -1,50 +1,52 @@
-import { Dialog, DialogTitle, DialogActions } from "@mui/material";
-import { CarEntry, CarResponse } from "../types"
 import { useState } from "react";
+import { CarEntry, CarResponse } from "../types"
+import { Dialog, DialogTitle, DialogActions,Button } from "@mui/material";
 import CarDialogContent from "./CarDialogContent";
 import { updateCar } from "../api/carapi";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import IconButton from "@mui/material/IconButton";
+import EditIcon from "@mui/icons-material/Edit";
+import {Tooltip} from "@mui/material";
+
 
 type FormProps = {
   cardata: CarResponse
 }
 
-function EditCar ({ cardata } : FormProps) {
-  const [open, setOpen ] = useState(false);
-
-  const [car, setCar] = useState<Car>({
-    brand:'',
-    model:'',
-    color:'',
-    registrationNumber:'',
-    modelYear:0,
-    price:0,
+function EditCar({ cardata } : FormProps ) {
+  const [ open, setOpen ] = useState(false);
+  const [ car, setCar ] = useState<Car>({
+    brand: '',
+    model: '',
+    color: '',
+    registrationNumber: '',
+    modelYear: 0,
+    price: 0,
   });
-
   const queryClient = useQueryClient();
-  const { mutate } = useMutation(updateCar,{
-    onSuccess: ()=>{
-      queryClient.invalidateQueries(['cars']);
+  const { mutate } = useMutation(updateCar, {
+    onSuccess: () => {
+      queryClient.invalidateQueries(["cars"]);
     },
     onError: (err) => {
       console.log(err);
     }
   })
 
-  const handleClickOpen = () =>{
+  const handleClickOpen = () => {
     setCar({
-      brand:cardata.brand,
-      model:cardata.model,
-      color:cardata.color,
-      registrationNumber:cardata.registrationNumber,
-      modelYear:cardata.modelYear,
-      price:cardata.price,
-    })
+      brand: cardata.brand,
+      model: cardata.model,
+      color: cardata.color,
+      registrationNumber: cardata.registrationNumber,
+      modelYear: cardata.modelYear,
+      price: cardata.price,
+    });
     setOpen(true);
   }
 
-  const handleClose = () =>{
-    setOpen(false)
+  const handleClose = () => {
+    setOpen(false);
   }
 
   const handleSave = () => {
@@ -52,35 +54,39 @@ function EditCar ({ cardata } : FormProps) {
     const carEntry: CarEntry = {car, url}
     mutate(carEntry);
     setCar({
-      brand:'',
-      model:'',
-      color:'',
-      registrationNumber:'',
-      modelYear:0,
-      price:0,
+      brand: '',
+      model: '',
+      color: '',
+      regustrationNumber: '',
+      modelYear: 0,
+      price: 0,
     });
-    setOpen(false)
+    setOpen(false);
   }
 
-  const handleChange = (envent:ReactDOM.ChangeEvent<HTMLInputElement>) =>{
-    setCar((...car,[event.target.name]: event.target.value))
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCar({...car, [event.target.name]: event.target.value});
   }
+
 
   return(
     <>
-      <button onClick={handleClickOpen}>
-        수정
-      </button>
+      <Tooltip title="Edit car">
+        <IconButton aria-label="edit" size="small"
+          onClick={handleClickOpen}>
+            <EditIcon fontSize="small" />
+        </IconButton>
+      </Tooltip>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Edit Car</DialogTitle>
-        <CarDialogContent car={car} handleChange={handleChange}/>
-          <DialogActions>
-          <button onClick={handleClose}></button>
-          <button onClick={handleSave}></button>
+        <DialogTitle>Edit car</DialogTitle>
+        <CarDialogContent car={car} handleChange={handleChange} />
+        <DialogActions>
+          <Button onClick={handleClose}>취소</Button>
+          <Button onClick={handleSave}>저장</Button>
         </DialogActions>
       </Dialog>
     </>
-  )
+  );
 }
 
 export default EditCar;
