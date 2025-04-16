@@ -49,7 +49,7 @@ function Carlist() {
       sortable: false,
       filterable: false,
       disableColumnMenu: true,
-      renderCell: (params: GridCellParams) =>(
+      renderCell: (params: GridCellParams) => (
         <IconButton aria-label="delete" size="small"
           onClick={() => {
             if (window.confirm(`${params.row.brand}의 ${params.row.model}을 삭제하시겠습니까? `)){
@@ -57,17 +57,8 @@ function Carlist() {
             }
           }}>
             <DeleteIcon fontSize="small"/>
-        </IconButton>)
-
-        // <Button
-        //   onClick={() => {
-        //     if (window.confirm(`${params.row.brand}의 ${params.row.model}을 삭제하시겠습니까?`)) {
-        //       mutate(params.row._links.car.href)
-        //     }
-        //   }}  
-        // >
-        //   삭제
-        // </Button>
+        </IconButton>
+      )
     }
   ]
 
